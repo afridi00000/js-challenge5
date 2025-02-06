@@ -37,3 +37,8 @@ const inventory = [5, 0, 12, 8, 0];
 const availableItems = inventory.filter(quantity => quantity > 0); // Remove products with zero stock
 
 console.log(availableItems);
+// Task 6: Reduce Method
+const sales = [500, 300, 200, 400];
+const totalRevenue = sales.reduce((total, amount) => total + amount, 0); // Calculate total revenue
+
+console.log(`Total Revenue: $${totalRevenue}`);
