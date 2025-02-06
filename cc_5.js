@@ -21,10 +21,10 @@ const order = {
 order.displayOrder();
 // Task 3: Array Manipulation
 let cartItems = ["Shirt", "Shoes", "Hat"];
-cartItems.push("Jacket"); // Add a new product
-cartItems.pop(); // Remove the last item
-cartItems.unshift("Socks"); // Add an item at the beginning
-cartItems.shift(); // Remove the first item
+cartItems.push("Jacket"); 
+cartItems.pop();
+cartItems.unshift("Socks"); 
+cartItems.shift(); 
 
 console.log(cartItems);
 // Task 4: Map Method
@@ -34,17 +34,17 @@ const discountedPrices = prices.map(price => price * 0.9); // Apply 10% discount
 console.log(discountedPrices);
 // Task 5: Filter Method
 const inventory = [5, 0, 12, 8, 0];
-const availableItems = inventory.filter(quantity => quantity > 0); // Remove products with zero stock
+const availableItems = inventory.filter(quantity => quantity > 0); 
 
 console.log(availableItems);
 // Task 6: Reduce Method
 const sales = [500, 300, 200, 400];
-const totalRevenue = sales.reduce((total, amount) => total + amount, 0); // Calculate total revenue
+const totalRevenue = sales.reduce((total, amount) => total + amount, 0); 
 
 console.log(`Total Revenue: $${totalRevenue}`);
 // Task 7: find() Method
 const customers = ["Alice", "Bob", "Charlie", "David"];
-const foundCustomer = customers.find(customer => customer === "Charlie"); // Locate "Charlie"
+const foundCustomer = customers.find(customer => customer === "Charlie"); 
 
 console.log(foundCustomer);
 // Task 8: Function Declaration
@@ -55,3 +55,11 @@ function calculateTax(amount, taxRate) {
 }
 
 calculateTax(100, 10);
+// Task 9: Function Expression
+const applyDiscount = function(price, discount) {
+    const discountedPrice = price - (price * (discount / 100));
+    console.log(`Discounted Price: $${discountedPrice}`);
+    return discountedPrice;
+};
+
+applyDiscount(200, 15); 
