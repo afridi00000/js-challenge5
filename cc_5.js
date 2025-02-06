@@ -32,3 +32,8 @@ const prices = [100, 200, 300];
 const discountedPrices = prices.map(price => price * 0.9); // Apply 10% discount
 
 console.log(discountedPrices);
+// Task 5: Filter Method
+const inventory = [5, 0, 12, 8, 0];
+const availableItems = inventory.filter(quantity => quantity > 0); // Remove products with zero stock
+
+console.log(availableItems);
