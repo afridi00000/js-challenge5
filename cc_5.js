@@ -19,3 +19,11 @@ const order = {
 };
 
 order.displayOrder();
+// Task 3: Array Manipulation
+let cartItems = ["Shirt", "Shoes", "Hat"];
+cartItems.push("Jacket"); // Add a new product
+cartItems.pop(); // Remove the last item
+cartItems.unshift("Socks"); // Add an item at the beginning
+cartItems.shift(); // Remove the first item
+
+console.log(cartItems);
