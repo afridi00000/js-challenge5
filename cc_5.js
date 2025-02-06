@@ -27,3 +27,8 @@ cartItems.unshift("Socks"); // Add an item at the beginning
 cartItems.shift(); // Remove the first item
 
 console.log(cartItems);
+// Task 4: Map Method
+const prices = [100, 200, 300];
+const discountedPrices = prices.map(price => price * 0.9); // Apply 10% discount
+
+console.log(discountedPrices);
